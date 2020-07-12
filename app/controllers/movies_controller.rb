@@ -5,7 +5,8 @@ class MoviesController < ApplicationController
   def index
     @movies = Movie.all
 
-    render json: @movies
+    render json: @movies.as_json(include: {reviews: {only:[:content,:ratings]}})
+                         
   end
 
   # GET /movies/1
