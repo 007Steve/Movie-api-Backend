@@ -43,3 +43,24 @@ Movie.create([{
         
         
         }])
+
+
+        Review.create([{
+             content: 'Best Movie!!',
+             ratings: '5',
+             movie: Movie.all.sample
+            },
+            { content: 'Never get old',
+                ratings: '4',
+                movie: Movie.all.sample
+            },
+
+            { content: 'I watch this movie all the time',
+                ratings: '4',
+                movie: Movie.all.sample
+            },
+            
+            { content: ' I Love this movie! ',
+                ratings: '5',
+                movie: Movie.all.sample
+                }])
